@@ -2,3 +2,7 @@ instalar react router
 npm i react-router-dom
 intalar bootstrap
 npm install react-bootstrap bootstrap
+instalar talw
+npm install tailwindcss
+npx tailwindcss init
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
