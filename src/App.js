@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes,Navigate } from 'react-router-dom'
 import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Users from './pages/Users';
@@ -15,6 +15,7 @@ export default function App() {
         <Route path='/' element={<Homepage/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/users' element={<Users/>} />
+        <Route path='/salir' element={<Navigate to= "/users"/>} />
         <Route path='/users/:id' element={<UserPage/>} />
         <Route path='*' element= {<NotFound/>}/>
       </Routes>
