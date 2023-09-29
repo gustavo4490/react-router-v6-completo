@@ -1,7 +1,7 @@
 import '../homePage.css'; // Importa tus estilos CSS
 import {Link} from 'react-router-dom'
 
-
+const usuario = 'antil';
 export default function Homepage() {
     return (
         <>
@@ -10,7 +10,7 @@ export default function Homepage() {
                     <h1 className="fw-bolder">Welcome to Home Page</h1>
                     <p className="lead"> app de prueba </p>
                     {/* etiqueta link para no refrescar la pagina  */}
-                    <Link className="btn btn-lg btn-light" to={'/Users'}>Usuarios</Link>
+                    <Link className="btn btn-lg btn-light" to={`/Users/${'antil'}`}>Usuarios</Link>
                 </div>
             </header>
 

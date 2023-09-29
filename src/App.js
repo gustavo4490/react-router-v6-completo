@@ -5,6 +5,7 @@ import About from './pages/About';
 import Users from './pages/Users';
 import NotFound from './pages/NotFound'
 import Nadbar from './components/Nadbar';
+import UserPage from './pages/UserPage';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path='/' element={<Homepage/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/users' element={<Users/>} />
+        <Route path='/users/:id' element={<UserPage/>} />
         <Route path='*' element= {<NotFound/>}/>
       </Routes>
     </BrowserRouter>
