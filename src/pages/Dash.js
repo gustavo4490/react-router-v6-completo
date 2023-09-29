@@ -1,10 +1,11 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Route, Routes } from "react-router-dom"
+import SubComponenete from "../components/SubComponenete";
 
 export default function Dash() {
     const navigate = useNavigate();
 
-    const handleClic = () =>{
-       navigate('/');
+    const handleClic = () => {
+        navigate('/');
     }
     return (
         <div className="jumbotron">
@@ -14,6 +15,11 @@ export default function Dash() {
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 
             <button onClick={handleClic} type="button" className="btn btn-secondary btn-lg mx-auto">Cerrar Sesión</button>
+            <br/>
+            <br/>
+            <Routes>
+                <Route path="welcome" element={<SubComponenete/>} />
+            </Routes>
         </div>
     )
 }

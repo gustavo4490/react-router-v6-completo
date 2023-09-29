@@ -18,7 +18,7 @@ export default function App() {
         <Route path='/users' element={<Users/>} />
         <Route path='/salir' element={<Navigate to= "/users"/>} />
         <Route path='/users/:id' element={<UserPage/>} />
-        <Route path='/dash' element = {<Dash/>} />
+        <Route path='/dash/*' element = {<Dash/>} />
         <Route path='*' element= {<NotFound/>}/>
       </Routes>
     </BrowserRouter>
