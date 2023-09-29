@@ -1,5 +1,4 @@
-import { useNavigate, Route, Routes } from "react-router-dom"
-import SubComponenete from "../components/SubComponenete";
+import { useNavigate, Outlet } from "react-router-dom"
 
 export default function Dash() {
     const navigate = useNavigate();
@@ -17,9 +16,7 @@ export default function Dash() {
             <button onClick={handleClic} type="button" className="btn btn-secondary btn-lg mx-auto">Cerrar Sesión</button>
             <br/>
             <br/>
-            <Routes>
-                <Route path="welcome" element={<SubComponenete/>} />
-            </Routes>
+            <Outlet/>
         </div>
     )
 }
