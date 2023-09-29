@@ -9,12 +9,12 @@ import Nadbar from './components/Nadbar';
 export default function App() {
   return (
     <BrowserRouter>
+        <Nadbar/>
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/users' element={<Users/>} />
         <Route path='*' element= {<NotFound/>}/>
-        <Route path='/nadbar' element={<Nadbar/>} />
       </Routes>
     </BrowserRouter>
   )
